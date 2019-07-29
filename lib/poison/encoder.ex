@@ -361,7 +361,7 @@ defimpl Poison.Encoder, for: [Range, Stream, MapSet, HashSet] do
   end
 end
 
-defimpl Poison.Encoder, for: [Date, Time, NaiveDateTime, DateTime] do
+defimpl Poison.Encoder, for: [Date, Time, NaiveDateTime] do
   alias Poison.Encoder
 
   def encode(value, options) do
